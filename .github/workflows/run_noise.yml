@@ -1,0 +1,13 @@
+name: Generate noise from CRON job
+
+on:
+  # run this workflow manually
+  workflow_dispatch:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Tests
+        run: bash ./noise.sh
